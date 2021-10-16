@@ -1,12 +1,12 @@
 version: "3.9"
 services:
   frontend:
-    container_name: react-tech-assessment
-    image: react-tech-assessment:1.0
+    container_name: react-typescript-starter
+    image: react-typescript-starter:1.0
     stdin_open: true
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
     volumes:
