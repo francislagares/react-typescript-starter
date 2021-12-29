@@ -16,7 +16,7 @@
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
-  "plugins": ["import", "jsx-a11y", "react", "react-hooks", "jest-dom", "prettier"],
+  "plugins": ["import", "jsx-a11y", "react-hooks", "jest-dom", "prettier"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
