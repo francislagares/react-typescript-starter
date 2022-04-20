@@ -1,4 +1,7 @@
-module.exports = {
+import type { Config } from '@jest/types';
+
+// Sync object
+const config: Config.InitialOptions = {
   testPathIgnorePatterns: ['<rootDir>/node_modules/'],
   setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
   transform: {
@@ -10,4 +13,7 @@ module.exports = {
     '^@components/(.*)$': '<rootDir>/components/$1',
   },
   testEnvironment: 'jsdom',
+  verbose: true,
 };
+
+export default config;
