@@ -52,7 +52,7 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.4",
+    "@commitlint/cli": "^16.3.0",
     "@commitlint/config-conventional": "^16.2.4",
     "@mdx-js/react": "^2.1.1",
     "@storybook/addon-actions": "^6.4.22",
