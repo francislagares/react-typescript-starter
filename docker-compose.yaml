@@ -1,14 +1,19 @@
 version: "3.9"
 services:
   frontend:
-    container_name: react-typescript-starter
-    image: react-typescript-starter:1.0
+    container_name: react-typescript-app
+    image: react-typescript-app
     stdin_open: true
+    tty: true
     build:
       context: .
       dockerfile: Dockerfile
+    networks:
+      - react-app
     ports:
       - "3000:3000"
     volumes:
       - "/app/node_modules"
       - "./:/app"
+networks:
+  frontend:

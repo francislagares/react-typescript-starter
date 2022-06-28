@@ -1,6 +1,6 @@
+.git
+.github
+.husky
+.vscode
 node_modules
-build
-.dockerignore
-**/.git
-**/.vscode
-**/node_modules/*
+Dockerfile
