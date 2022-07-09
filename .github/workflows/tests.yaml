@@ -1,5 +1,5 @@
 
-name: Tests
+name: CI - Unit/Integration Tests
 
 on:
   push:
