@@ -9,8 +9,6 @@ const config: Config.InitialOptions = {
   },
   moduleNameMapper: {
     '\\.(css|less|scss|sass)$': '<rootDir>/styles/__mocks__/styleMock.js',
-    '^@pages/(.*)$': '<rootDir>/pages/$1',
-    '^@components/(.*)$': '<rootDir>/components/$1',
   },
   testEnvironment: 'jsdom',
   verbose: true,
