@@ -8,7 +8,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.8.4",
-    "web-vitals": "^3.0.2"
+    "web-vitals": "^3.0.3"
   },
   "scripts": {
     "start": "craco start",
@@ -37,6 +37,14 @@
         "rules": {
           "import/no-anonymous-default-export": "off"
         }
+      },
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
       }
     ]
   },
@@ -55,47 +63,51 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
-    "@mdx-js/react": "^2.1.3",
+    "@mdx-js/react": "^1.6.22",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-docs": "^6.5.12",
-    "@storybook/addon-essentials": "^6.5.10",
-    "@storybook/addon-links": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
     "@storybook/builder-webpack5": "^6.5.12",
     "@storybook/manager-webpack5": "^6.5.12",
     "@storybook/node-logger": "^6.5.12",
     "@storybook/preset-create-react-app": "^4.1.2",
     "@storybook/react": "^6.5.12",
-    "@testing-library/dom": "^8.18.1",
+    "@storybook/testing-library": "^0.0.13",
+    "@testing-library/dom": "^8.19.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
-    "@types/jest": "^29.1.1",
-    "@types/node": "^18.8.0",
+    "@types/jest": "^29.2.0",
+    "@types/node": "^18.11.0",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.38.1",
-    "@typescript-eslint/parser": "^5.38.1",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "babel-plugin-named-exports-order": "^0.0.2",
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.24.0",
+    "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.5.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest-dom": "^4.0.2",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-testing-library": "^5.7.2",
+    "eslint-plugin-testing-library": "^5.7.3",
     "husky": "^8.0.1",
     "jest-axe": "^6.0.0",
     "lint-staged": "^13.0.3",
-    "msw": "^0.47.3",
+    "msw": "^0.47.4",
     "prettier": "^2.7.1",
     "prettier-stylelint": "^0.4.2",
-    "stylelint": "^14.13.0",
+    "prop-types": "^15.8.1",
+    "stylelint": "^14.14.0",
     "stylelint-a11y": "^1.2.3",
-    "stylelint-config-standard": "^28.0.0",
+    "stylelint-config-standard": "^29.0.0",
     "stylelint-order": "^5.0.0",
     "ts-jest": "^29.0.3",
     "webpack": "^5.74.0"
@@ -106,8 +118,8 @@
     }
   },
   "engines": {
-    "node": ">=18.3.0",
-    "npm": ">=8.10.0"
+    "node": ">=16.18.0",
+    "npm": ">=8.19.0"
   },
   "packageManager": "yarn@3.2.1"
 }
