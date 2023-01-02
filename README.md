@@ -1,8 +1,6 @@
 # React-TypeScript-Starter
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/francislagares/react-typescript-starter/Tests?style=for-the-badge&labelColor=black&logo=github)
-
-
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/francislagares/react-typescript-starter/tests.yaml?style=for-the-badge)
 ## Built with
 
 <p>
