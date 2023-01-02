@@ -1,5 +1,5 @@
 
-name: CI - Unit/Integration Tests
+name: Tests
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [19.x]
 
     steps:
       - name: Checkout

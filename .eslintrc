@@ -58,13 +58,7 @@
     ],
     "import/extensions": [
       "error",
-      "ignorePackages",
-      {
-        "ts": "never",
-        "tsx": "never",
-        "js": "never",
-        "jsx": "never"
-      }
+      "never"
     ],
     "quotes": "off",
     "jsx-a11y/anchor-is-valid": [

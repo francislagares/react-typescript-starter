@@ -1,19 +1,20 @@
 version: "3.9"
 services:
   frontend:
-    container_name: react-typescript-app
-    image: react-typescript-app
+    container_name: react-vite
+    image: react-vite
     stdin_open: true
     tty: true
     build:
       context: .
       dockerfile: Dockerfile
     networks:
-      - react-app
+      - frontend
     ports:
-      - "3000:3000"
+      - "5173:5173"
     volumes:
       - "/app/node_modules"
       - "./:/app"
 networks:
   frontend:
+    name: react-vite

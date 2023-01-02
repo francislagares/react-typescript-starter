@@ -6,6 +6,9 @@
 ## Built with
 
 <p>
+  <a href='https://www.vitejs.dev/'>
+		<img src='https://img.shields.io/badge/vite-646CFF?logoWidth=30&labelColor=black&style=for-the-badge&logo=vite' />
+	</a>
   <a href='https://www.react.org/'>
 		<img src='https://img.shields.io/badge/react-61DAFB?logoWidth=30&labelColor=black&style=for-the-badge&logo=react' />
 	</a>
@@ -19,8 +22,8 @@
 ## Tested with
 
 <p>
-  <a href='https://jestjs.io/'>
-		<img src='https://img.shields.io/badge/jest-C21325?logoWidth=30&&style=for-the-badge&logo=jest' />
+  <a href='https://vitejs.dev/'>
+		<img src='https://img.shields.io/badge/vitest-6E9F18?logoWidth=30&labelColor=black&style=for-the-badge&logo=vitest&logoColor=white' />
 	</a>
   &nbsp;
   <a href='https://testing-library.com/'>
@@ -46,7 +49,7 @@
 - Start the development server:
 
   ```bash
-  yarn start
+  yarn dev
   ```
 
 - Start the test suites:
@@ -55,24 +58,18 @@
   yarn test
   ```
 
-  Open [http://localhost:3000](http://localhost:3000) with your browser to see the
+  Open [http://localhost:5173](http://localhost:5173) with your browser to see the
   result.
 
 
 # Docker
 
-- Building an image
-
-  ```bash
-  $ docker-compose build
-  ```
-
-- Running a container
+- Create and run a container
 
   ```bash
   $ docker-compose up
   ```
-  Open [http://localhost:3000](http://localhost:3000) with your browser to see the
+  Open [http://localhost:5173](http://localhost:5173) with your browser to see the
   result.
 
 - Stopping a container

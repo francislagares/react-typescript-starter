@@ -1,32 +1,45 @@
 {
-  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
-    "target": "es2022",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    /* Project Setup */
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "react-jsx",
     "allowJs": true,
+    "noEmit": true,
+    "sourceMap": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "removeComments": true,
+    "downlevelIteration": true,
+
+    /* Strict Type-Checking */
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
+
+    /* Linter Checks */
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": false,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+
+    "useDefineForClassFields": true,
+
+    /* Module Resolution */
+    "module": "ES2022",
+    "esModuleInterop": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+      "paths": {
+          "@/*": [
+              "src/*"
+          ]
+      }
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "src",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "include": ["src"],
+  "types": ["vitest/globals"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
