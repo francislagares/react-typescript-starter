@@ -20,7 +20,8 @@
 ## Tested with
 
 <p>
-  <a href='https://vitejs.dev/'>
+
+  <a href='https://vitest.dev/'>
 		<img src='https://img.shields.io/badge/vitest-6E9F18?logoWidth=30&labelColor=black&style=for-the-badge&logo=vitest&logoColor=white' />
 	</a>
   &nbsp;
