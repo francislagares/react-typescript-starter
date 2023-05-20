@@ -1,9 +1,10 @@
 /// <reference types="vitest" />
 import path from 'path';
+
 import react from '@vitejs/plugin-react';
-import { defineConfig } from 'vite';
 import svgrPlugin from 'vite-plugin-svgr';
 import viteTsconfigPaths from 'vite-tsconfig-paths';
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   plugins: [react(), viteTsconfigPaths(), svgrPlugin()],
@@ -20,6 +21,7 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './src/setupTests.ts',
     coverage: {
+      provider: 'c8',
       reporter: ['text', 'html'],
       exclude: ['node_modules/', 'src/setupTests.ts'],
     },
