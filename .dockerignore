@@ -1,6 +1,27 @@
+# Versioning and metadata
 .git
-.github
 .husky
+.github
+.gitignore
+.dockerignore
+
+# Build dependencies
 .vscode
-node_modules
+dist.do
+/node_modules
+
+# code formatter
+.eslintrc
+.eslintignore
+.editorconfig
+.huskyrc
+.lint-staged.config.js
+.prettierrc
+README.md
+
+# test
+vite.config.js
+
+# docker
 Dockerfile
+docker-compose.yml
