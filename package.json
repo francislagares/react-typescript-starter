@@ -9,8 +9,8 @@
     "test:ci": "vitest run",
     "test:watch": "vitest watch --ui",
     "test:coverage": "vitest run --coverage",
-    "storybook": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
-    "build-storybook": "NODE_OPTIONS=--openssl-legacy-provider build-storybook",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
     "lint": "eslint --ext js,jsx,ts,tsx --fix --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx|json|md)\" --write",
@@ -32,8 +32,10 @@
     "@storybook/addon-essentials": "^7.0.12",
     "@storybook/addon-interactions": "^7.0.12",
     "@storybook/addon-links": "^7.0.12",
+    "@storybook/blocks": "^7.0.12",
     "@storybook/builder-vite": "^7.0.12",
     "@storybook/react": "^7.0.12",
+    "@storybook/react-vite": "^7.0.12",
     "@storybook/testing-library": "^0.1.0",
     "@testing-library/dom": "^9.3.0",
     "@testing-library/jest-dom": "^5.16.5",
@@ -61,6 +63,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "^0.6.12",
     "eslint-plugin-testing-library": "^5.11.0",
     "husky": "^8.0.3",
     "jest-axe": "^7.0.1",
@@ -70,6 +73,7 @@
     "prettier": "^2.8.8",
     "prettier-stylelint": "^0.4.2",
     "prop-types": "^15.8.1",
+    "storybook": "^7.0.12",
     "stylelint": "^15.6.2",
     "stylelint-a11y": "^1.2.3",
     "stylelint-config-standard": "^33.0.0",
@@ -86,5 +90,10 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "packageManager": "yarn@3.5.1"
+  "packageManager": "yarn@3.5.1",
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
 }

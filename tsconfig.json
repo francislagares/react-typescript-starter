@@ -5,7 +5,6 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "jsx": "react-jsx",
     "allowJs": true,
-    "noEmit": true,
     "sourceMap": true,
     "skipLibCheck": true,
     "isolatedModules": true,
@@ -27,6 +26,7 @@
 
     /* Module Resolution */
     "module": "ES2022",
+    "outDir": "./dist",
     "esModuleInterop": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
