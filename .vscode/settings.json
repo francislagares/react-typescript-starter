@@ -1,9 +1,11 @@
 {
   "css.lint.unknownAtRules": "ignore",
   "editor.formatOnSave": false,
+  "sort-imports.languages": ["javascript", "typescript"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true
+    "source.fixAll.stylelint": true,
+    "source.organizeImports": true
   },
   "[json]": {
     "editor.formatOnSave": true,
