@@ -50,31 +50,36 @@
   ```bash
   yarn dev
   ```
+  Open [http://localhost:5173](http://localhost:5173) with your browser to see the welcome page.
 
-- Start the test suites:
+- To run the test suites:
 
   ```bash
-  yarn test
+  yarn test:ci
   ```
 
-  Open [http://localhost:5173](http://localhost:5173) with your browser to see the
-  result.
+  
 
 
-# Docker
+# Docker - Production Environment
 
 - Create and run a container
 
   ```bash
-  $ docker-compose up
+  $ docker compose up -d
   ```
-  Open [http://localhost:5173](http://localhost:5173) with your browser to see the
+  Open [http://localhost:8080](http://localhost:8080) with your browser to see the
   result.
 
-- Stopping a container
+- To stop a container
 
   ```bash
-  $ docker-compose down
+  $ docker compose stop
+  ```
+- To remove a container
+
+  ```bash
+  $ docker compose down
   ```
 # Author
 
