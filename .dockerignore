@@ -7,7 +7,7 @@
 
 # Build dependencies
 .vscode
-dist.do
+/dist
 /node_modules
 
 # code formatter
@@ -24,4 +24,4 @@ vite.config.js
 
 # docker
 Dockerfile
-docker-compose.yml
+docker-compose.yaml

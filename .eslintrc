@@ -28,7 +28,6 @@
   "rules": {
     "prettier/prettier": "error",
     "camelcase": "off",
-    "import/prefer-default-export": "off",
     "react/prop-types": "off",
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
@@ -37,6 +36,7 @@
     "react/require-default-props": "off",
     "react-hooks/exhaustive-deps": "off",
     // eslint-plugin-import rules
+    "import/prefer-default-export": "off",
     "import/named": "error",
     "import/namespace": "error",
     "import/default": "error",
