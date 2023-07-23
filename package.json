@@ -44,7 +44,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
-    "@types/node": "^20.4.2",
+    "@types/node": "^20.4.4",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.1.0",
@@ -96,7 +96,7 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "packageManager": "yarn@3.5.1",
+  "packageManager": "yarn@3.6.1",
   "eslintConfig": {
     "extends": [
       "plugin:storybook/recommended"
