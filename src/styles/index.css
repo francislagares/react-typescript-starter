@@ -39,7 +39,7 @@ h1 {
 
 @media screen and (prefers-reduced-motion: reduce) {
   button {
-    padding: .6em 1.2em;
+    padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
     border: 1px solid transparent;
@@ -52,7 +52,7 @@ h1 {
 }
 
 button {
-  padding: .6em 1.2em;
+  padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   border: 1px solid transparent;
@@ -60,7 +60,7 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color .25s;
+  transition: border-color 0.25s;
 }
 
 button:hover {

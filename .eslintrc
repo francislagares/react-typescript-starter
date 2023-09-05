@@ -25,6 +25,7 @@
     "plugin:jest-dom/recommended",
     "prettier"
   ],
+  "ignorePatterns": ["cypress.config.ts"],
   "rules": {
     "prettier/prettier": "error",
     "camelcase": "off",
