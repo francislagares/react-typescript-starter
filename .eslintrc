@@ -9,14 +9,22 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 2021,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
-  "plugins": ["import", "css-import-order", "testing-library", "jsx-a11y", "react-hooks", "jest-dom", "prettier"],
+  "plugins": [
+    "import",
+    "css-import-order",
+    "testing-library",
+    "jsx-a11y",
+    "react-hooks",
+    "jest-dom",
+    "prettier"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",

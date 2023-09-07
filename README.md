@@ -7,6 +7,7 @@
   <a href='https://www.vitejs.dev/'>
 		<img src='https://img.shields.io/badge/vite-646CFF?logoWidth=30&labelColor=black&style=for-the-badge&logo=vite' />
 	</a>
+  &nbsp;
   <a href='https://www.react.org/'>
 		<img src='https://img.shields.io/badge/react-61DAFB?logoWidth=30&labelColor=black&style=for-the-badge&logo=react' />
 	</a>
