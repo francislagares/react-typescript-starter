@@ -22,6 +22,7 @@
     "testing-library",
     "jsx-a11y",
     "react-hooks",
+    "react-refresh",
     "jest-dom",
     "prettier"
   ],
@@ -44,6 +45,11 @@
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
     "react-hooks/exhaustive-deps": "off",
+    // eslint-plugin-react-refresh
+    "react-refresh/only-export-components": [
+      "warn",
+      { "allowConstantExport": true }
+    ],
     // eslint-plugin-import rules
     "import/prefer-default-export": "off",
     "import/named": "error",
