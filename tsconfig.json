@@ -25,10 +25,10 @@
     "useDefineForClassFields": true,
 
     /* Module Resolution */
-    "module": "ES2022",
+    "module": "ESNext",
     "outDir": "./dist",
     "esModuleInterop": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
