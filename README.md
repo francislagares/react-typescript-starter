@@ -5,7 +5,7 @@
 
 <p>
   <a href='https://www.vitejs.dev/'>
-		<img src='https://img.shields.io/badge/vite-646CFF?logoWidth=30&labelColor=black&style=for-the-badge&logo=vite' />
+		<img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E" />
 	</a>
   &nbsp;
   <a href='https://www.react.org/'>
