@@ -1,11 +1,10 @@
 {
   "css.lint.unknownAtRules": "ignore",
   "editor.formatOnSave": false,
-  "sort-imports.languages": ["javascript", "typescript"],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true,
-    "source.organizeImports": true
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit",
+    "source.organizeImports": "explicit"
   },
   "[json]": {
     "editor.formatOnSave": true,
@@ -14,5 +13,5 @@
   "[html]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  }
 }
