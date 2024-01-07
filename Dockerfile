@@ -1,40 +1,43 @@
-ARG NODE=alpine:latest
-
 # Stage 1: Development environment
-FROM ${NODE} AS development
+FROM node:alpine AS development
 
-RUN apk update && apk add --no-cache libc6-compat nodejs yarn
+RUN apk update && apk add --no-cache nodejs
+RUN corepack enable
+RUN addgroup webdev && adduser -S -G webdev react-app
+
+USER react-app
 
 WORKDIR /app
 
 COPY package.json .
+COPY pnpm-lock.yaml .
 
-RUN if [ -f "yarn.lock" ]; then COPY yarn.lock ./; fi
-RUN yarn set version stable
+RUN pnpm install
+
+USER react-app
 
 COPY . .
 
-RUN yarn install --silent
+EXPOSE 6006
 
-CMD ["yarn", "dev"]
+CMD ["pnpm", "storybook"]
 
 # Stage 2: Build production image
-FROM ${NODE} AS builder
+FROM  node:alpine AS builder
 
-RUN apk update && apk add --no-cache nodejs yarn
+RUN apk update && apk add --no-cache nodejs
 
 WORKDIR /app
 
 COPY package.json .
+COPY pnpm-lock.yaml .
 
-RUN if [ -f "yarn.lock" ]; then COPY yarn.lock ./; fi
-RUN yarn set version stable
+RUN corepack enable
+RUN pnpm install
 
 COPY . .
 
-RUN yarn install --silent
-
-RUN yarn build
+RUN pnpm build
 
 # Stage 3: Serve production image
 FROM nginx:alpine

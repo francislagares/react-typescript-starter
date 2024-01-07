@@ -8,10 +8,14 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      target: development
     networks:
       - frontend
     ports:
-      - "8080:80"
+      - "5173:5173"
+    volumes:
+      - /app/node_modules
+      - ./:/app
 
 networks:
   frontend:
