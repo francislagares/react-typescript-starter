@@ -43,23 +43,21 @@
 - Install the dependencies by running the following command.
 
   ```bash
-  yarn install
+  pnpm install
   ```
 
 - Start the development server:
 
   ```bash
-  yarn dev
+  pnpm dev
   ```
   Open [http://localhost:5173](http://localhost:5173) with your browser to see the welcome page.
 
 - To run the test suites:
 
   ```bash
-  yarn test:ci
+  pnpm test:ci
   ```
-
-  
 
 
 # Docker - Production Environment
@@ -69,7 +67,7 @@
   ```bash
   $ docker compose up -d
   ```
-  Open [http://localhost:8080](http://localhost:8080) with your browser to see the
+  Open [http://localhost:5173](http://localhost:5173) with your browser to see the
   result.
 
 - To stop a container
