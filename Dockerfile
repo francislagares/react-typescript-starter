@@ -18,9 +18,9 @@ USER react-app
 
 COPY . .
 
-EXPOSE 6006
+EXPOSE 5173
 
-CMD ["pnpm", "storybook"]
+CMD ["pnpm", "dev"]
 
 # Stage 2: Build production image
 FROM  node:alpine AS builder
