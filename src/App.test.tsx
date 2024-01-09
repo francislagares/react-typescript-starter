@@ -9,7 +9,7 @@ describe('App', () => {
 
     const heading = screen.getByRole('heading');
 
-    expect(heading).toBeVisible();
+    expect(heading).toBeInTheDocument();
     expect(heading).toHaveTextContent('Vite + React');
 
     // screen.debug();

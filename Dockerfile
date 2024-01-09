@@ -1,8 +1,7 @@
 # Stage 1: Development environment
 FROM node:alpine AS development
 
-RUN apk update && apk add --no-cache nodejs
-RUN corepack enable
+RUN apk update && apk add --no-cache nodejs && corepack enable
 RUN addgroup webdev && adduser -S -G webdev react-app
 
 USER react-app
@@ -25,14 +24,13 @@ CMD ["pnpm", "dev"]
 # Stage 2: Build production image
 FROM  node:alpine AS builder
 
-RUN apk update && apk add --no-cache nodejs
+RUN apk update && apk add --no-cache nodejs && corepack enable
 
 WORKDIR /app
 
 COPY package.json .
 COPY pnpm-lock.yaml .
 
-RUN corepack enable
 RUN pnpm install
 
 COPY . .
