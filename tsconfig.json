@@ -13,6 +13,7 @@
 
     /* Strict Type-Checking */
     "strict": true,
+    "noUncheckedIndexedAccess": true,
 
     /* Linter Checks */
     "noImplicitAny": true,
