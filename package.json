@@ -44,14 +44,14 @@
     "@storybook/testing-library": "^0.2.2",
     "@testing-library/cypress": "^10.0.2",
     "@testing-library/dom": "^10.1.0",
-    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
     "@types/node": "^20.14.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^7.12.0",
-    "@typescript-eslint/parser": "^7.12.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
     "@vitejs/plugin-react": "^4.3.1",
     "@vitest/coverage-v8": "^1.6.0",
     "@vitest/ui": "1.6.0",
@@ -79,7 +79,7 @@
     "lint-staged": "^15.2.5",
     "msw": "^2.3.1",
     "msw-storybook-addon": "^2.0.2",
-    "prettier": "^3.3.1",
+    "prettier": "^3.3.2",
     "prettier-stylelint": "^0.4.2",
     "prop-types": "^15.8.1",
     "storybook": "^8.1.6",
@@ -89,7 +89,7 @@
     "stylelint-order": "^6.0.4",
     "ts-jest": "^29.1.4",
     "typescript": "^5.4.5",
-    "typescript-eslint": "^7.12.0",
+    "typescript-eslint": "^7.13.0",
     "vite": "^5.2.13",
     "vite-plugin-svgr": "^4.2.0",
     "vite-tsconfig-paths": "^4.3.2",
@@ -106,7 +106,7 @@
   },
   "engines": {
     "node": ">=22.0.0",
-    "pnpm": ">=9.2.0"
+    "pnpm": ">=9.3.0"
   },
-  "packageManager": "pnpm@9.2.0+sha512.98a80fd11c2e7096747762304106432b3ddc67dcf54b5a8c01c93f68a2cd5e05e6821849522a06fb76284d41a2660d5e334f2ee3bbf29183bf2e739b1dafa771"
+  "packageManager": "pnpm@9.3.0+sha512.ee7b93e0c2bd11409c6424f92b866f31d3ea1bef5fbe47d3c7500cdc3c9668833d2e55681ad66df5b640c61fa9dc25d546efa54d76d7f8bf54b13614ac293631"
 }
