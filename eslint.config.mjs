@@ -117,6 +117,12 @@ export default [
             },
 
             {
+              pattern: '@/pages/**',
+              group: 'internal',
+              position: 'before',
+            },
+
+            {
               pattern: '@/features/**',
               group: 'internal',
               position: 'before',
@@ -124,6 +130,12 @@ export default [
 
             {
               pattern: '@/components/**',
+              group: 'internal',
+              position: 'before',
+            },
+
+            {
+              pattern: '@/providers/**',
               group: 'internal',
               position: 'before',
             },

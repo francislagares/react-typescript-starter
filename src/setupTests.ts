@@ -9,10 +9,14 @@ declare module 'vitest' {
       TestingLibraryMatchers<T, void> {}
 }
 
-expect.extend(matchers);
-
 // mocking methods which are not implemented in JSDOM
 beforeAll(() => {
+  expect.extend(matchers);
+
+  window.HTMLElement.prototype.scrollIntoView = vi.fn();
+  window.HTMLElement.prototype.hasPointerCapture = vi.fn();
+  window.HTMLElement.prototype.releasePointerCapture = vi.fn();
+
   Object.defineProperty(window, 'matchMedia', {
     writable: true,
     value: vi.fn().mockImplementation(query => ({
