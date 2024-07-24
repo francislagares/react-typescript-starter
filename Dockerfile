@@ -1,24 +1,25 @@
-# Stage 1: Development environment
-FROM node:alpine AS development
+# Use the node alpine image as the base image
+FROM node:alpine
 
+# Install necessary packages and enable corepack
 RUN apk update && apk add --no-cache nodejs && corepack enable
-RUN addgroup webdev && adduser -S -G webdev react-app
 
-USER react-app
-
+# Set the working directory to /app
 WORKDIR /app
 
+# Copy only the package.json file initially for installing dependencies
 COPY package.json .
-COPY pnpm-lock.yaml .
 
+# Install dependencies using pnpm
 RUN pnpm install
 
-USER react-app
-
+# Copy all files from the host to the container's working directory
 COPY . .
 
+# Expose port 5173
 EXPOSE 5173
 
+# Command to run the application
 CMD ["pnpm", "dev"]
 
 # Stage 2: Build production image
