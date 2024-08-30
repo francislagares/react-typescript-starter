@@ -1,5 +1,5 @@
 # Use the node alpine image as the base image
-FROM node:alpine
+FROM node:alpine AS development
 
 # Install necessary packages and enable corepack
 RUN apk update && apk add --no-cache nodejs && corepack enable
@@ -29,9 +29,10 @@ RUN apk update && apk add --no-cache nodejs && corepack enable
 
 WORKDIR /app
 
+# Copy only the package.json file initially for installing dependencies
 COPY package.json .
-COPY pnpm-lock.yaml .
 
+# Install dependencies using pnpm
 RUN pnpm install
 
 COPY . .
