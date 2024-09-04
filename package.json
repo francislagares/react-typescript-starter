@@ -45,7 +45,6 @@
     "@storybook/react": "^8.2.9",
     "@storybook/react-vite": "^8.2.9",
     "@storybook/test": "^8.2.9",
-    "@storybook/testing-library": "^0.2.2",
     "@tanstack/eslint-plugin-query": "^5.53.0",
     "@tanstack/react-query-devtools": "^5.54.1",
     "@testing-library/cypress": "^10.0.2",
