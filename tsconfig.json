@@ -39,7 +39,7 @@
     }
   },
   "include": ["src"],
-  "exclude": ["./cypress.config.ts"],
+  "exclude": [".storybook", "node_modules", "./cypress.config.ts"],
   "types": ["vitest/globals"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

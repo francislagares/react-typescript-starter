@@ -16,6 +16,10 @@ terraform {
   }
 }
 
+provider "aws" {
+  region = "${var.region}"
+}
+
 ####### modules #######
 module "nginx_server_dev" {
     source = "./nginx_server_module"
@@ -74,9 +78,7 @@ resource "aws_instance" "server-web" {
     ]
 }
 
-provider "aws" {
-  region = "us-east-1"
-}
+
 
 # S3 bucket for website hosting
 resource "aws_s3_bucket" "website" {
